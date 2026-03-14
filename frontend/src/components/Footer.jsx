@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, MapPin, Clock } from 'lucide-react';
+import { Phone, MapPin, Clock, Facebook } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -62,15 +62,36 @@ export const Footer = () => {
                 <Clock className="w-4 h-4 mt-0.5 text-[#007AFF] flex-shrink-0" />
                 <span>Open Daily</span>
               </li>
+              <li className="flex items-center gap-3 text-[#94A3B8] text-sm pt-2">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100032095194744"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-[#007AFF] transition-colors"
+                  data-testid="footer-facebook-link"
+                >
+                  <Facebook className="w-5 h-5 text-[#007AFF]" />
+                  Follow us on Facebook
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/5 text-center">
+        <div className="pt-8 border-t border-white/5 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[#475569] text-sm">
             © {new Date().getFullYear()} Sam's Phones & Tobacco. All rights reserved.
           </p>
+          <a
+            href="https://www.facebook.com/profile.php?id=100032095194744"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-[#94A3B8] hover:text-[#007AFF] transition-colors"
+            data-testid="footer-facebook-icon"
+          >
+            <Facebook className="w-5 h-5" />
+          </a>
         </div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, ExternalLink } from 'lucide-react';
+import { Phone, MapPin, Clock, ExternalLink, Facebook } from 'lucide-react';
 import { ContactForm } from '../components/ContactForm';
 import { Button } from '../components/ui/button';
 
@@ -70,6 +70,27 @@ export default function Contact() {
                   Open daily for your convenience. Call for current hours.
                 </p>
               </div>
+
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/profile.php?id=100032095194744"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+                data-testid="contact-facebook-card"
+              >
+                <div className="bg-[#0A0A18] border border-white/5 rounded-xl p-6 hover:border-[#007AFF]/50 transition-colors">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-[#007AFF] rounded-lg flex items-center justify-center">
+                      <Facebook className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-white">Follow Us</h3>
+                      <p className="text-[#007AFF] text-sm">Facebook</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
 
               {/* Google Map Embed */}
               <div className="rounded-xl overflow-hidden border border-white/5" data-testid="google-map">
