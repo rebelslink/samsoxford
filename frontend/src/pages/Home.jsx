@@ -119,7 +119,53 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Gallery Image */}
+          {/* Main Gallery Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            {/* Featured Large Image - phones2 */}
+            <div className="md:col-span-2 relative rounded-2xl overflow-hidden h-64 md:h-96 group">
+              <img
+                src="https://customer-assets.emergentagent.com/job_phones-tobacco-shop/artifacts/nzkugojm_phones2.jpg"
+                alt="Wide selection of iPhones"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A18] via-transparent to-transparent opacity-70" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <span className="font-accent text-[#39FF14] text-sm tracking-wide">HUGE SELECTION</span>
+                <h3 className="text-xl font-bold text-white">Quality Pre-Owned iPhones</h3>
+              </div>
+            </div>
+            
+            {/* Smaller images column */}
+            <div className="flex flex-col gap-4">
+              {/* phones1 image */}
+              <div className="relative rounded-2xl overflow-hidden h-44 md:h-[calc(50%-0.5rem)] group">
+                <img
+                  src="https://customer-assets.emergentagent.com/job_phones-tobacco-shop/artifacts/lzecy20w_phones1.jpg"
+                  alt="Prepaid plans display"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A18]/80 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <span className="text-white font-semibold text-sm">Prepaid Plans</span>
+                </div>
+              </div>
+              
+              {/* gallery2 - smaller screenshot sized nicely */}
+              <div className="relative rounded-2xl overflow-hidden h-44 md:h-[calc(50%-0.5rem)] group">
+                <img
+                  src="https://customer-assets.emergentagent.com/job_phones-tobacco-shop/artifacts/bw8jxk7b_gallery2.jpg"
+                  alt="Store interior collage"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A18]/80 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <span className="text-white font-semibold text-sm">More Inside</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Original Gallery Image */}
           <div className="relative rounded-2xl overflow-hidden">
             <img
               src="https://customer-assets.emergentagent.com/job_phones-tobacco-shop/artifacts/8qvql0lk_store_gallery.png"
