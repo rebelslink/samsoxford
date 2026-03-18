@@ -54,7 +54,7 @@ export default function Products() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="relative rounded-2xl overflow-hidden h-64 md:h-80 group">
               <img
-                src="https://customer-assets.emergentagent.com/job_phones-tobacco-shop/artifacts/nzkugojm_phones2.jpg"
+                src="https://customer-assets.emergentagent.com/job_phones-tobacco-shop/artifacts/lzecy20w_phones1.jpg"
                 alt="Wide selection of iPhones available"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -67,7 +67,7 @@ export default function Products() {
             </div>
             <div className="relative rounded-2xl overflow-hidden h-64 md:h-80 group">
               <img
-                src="https://customer-assets.emergentagent.com/job_phones-tobacco-shop/artifacts/lzecy20w_phones1.jpg"
+                src="https://customer-assets.emergentagent.com/job_phones-tobacco-shop/artifacts/nzkugojm_phones2.jpg"
                 alt="Prepaid plans and phones display"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
